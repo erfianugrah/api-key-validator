@@ -330,29 +330,6 @@ The test suite covers:
 - Path-based access control
 - Error handling for missing/invalid keys
 
-## Security Best Practices
-
-1. **Regular key rotation**:
-   - Rotate your API keys periodically
-   - Consider automated rotation for high-security environments
-
-2. **Monitoring and logging**:
-   - Implement logging of API key usage
-   - Set up alerts for suspicious activity
-
-3. **Rate limiting**:
-   - Consider adding rate limiting to prevent brute force attacks
-   - Cloudflare has built-in rate limiting features you can use
-
-4. **Key generation**:
-   - Use cryptographically secure sources of randomness for key generation
-   - Never reuse encryption keys across different environments
-
-5. **Key storage**:
-   - Always use Worker Secrets for encryption key storage
-   - Never commit encryption keys to source control
-   - Delete keys-metadata.json immediately after setting up Worker Secrets
-
 ## CLI Tool Options
 
 ```
