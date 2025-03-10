@@ -1,0 +1,25 @@
+{
+	"name": "api-key-validator",
+	"version": "0.0.0",
+	"private": true,
+	"scripts": {
+		"deploy": "wrangler deploy",
+		"dev": "wrangler dev",
+		"start": "wrangler dev",
+		"test": "vitest run",
+		"test:watch": "vitest",
+		"test:utils": "node utils/test.js",
+		"upload-keys": "node utils/cli-tools.js upload",
+		"generate-keys": "node utils/cli-tools.js generate",
+		"rotate-keys": "node utils/cli-tools.js rotate",
+		"generate-encryption-key": "node utils/cli-tools.js encrypt"
+	},
+	"bin": {
+		"api-key-tools": "./utils/cli-tools.js"
+	},
+	"devDependencies": {
+		"@cloudflare/vitest-pool-workers": "^0.7.5",
+		"vitest": "~3.0.7",
+		"wrangler": "^3.112.0"
+	}
+}

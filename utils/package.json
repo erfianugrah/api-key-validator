@@ -1,0 +1,28 @@
+{
+  "name": "api-key-tools",
+  "version": "1.0.0",
+  "description": "Utilities for managing API keys with encryption",
+  "main": "index.js",
+  "bin": {
+    "api-key-tools": "./cli-tools.js"
+  },
+  "scripts": {
+    "generate": "node cli-tools.js generate",
+    "upload": "node cli-tools.js upload",
+    "rotate": "node cli-tools.js rotate",
+    "encrypt": "node cli-tools.js encrypt"
+  },
+  "keywords": [
+    "api",
+    "keys",
+    "encryption",
+    "security",
+    "cloudflare",
+    "workers"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "crypto": "^1.0.1"
+  }
+}
